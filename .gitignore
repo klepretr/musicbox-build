@@ -1,0 +1,6 @@
+.vscode/
+
+# Yocto artefacts
+build/
+layers/
+yocto-cache/

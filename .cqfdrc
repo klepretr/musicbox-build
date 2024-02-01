@@ -1,0 +1,7 @@
+[project]
+org='musicbox'
+name='bsp'
+
+[build]
+command='kas build project.yml'
+flavors='bundle bundle-with-kernel'

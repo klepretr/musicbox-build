@@ -1,0 +1,36 @@
+header:
+  version: 15
+  includes:
+    - base.yml
+
+machine: musicbox
+distro: musicbox
+target: musicbox-image
+
+env:
+  SECRET_PATH: ../../../../../../..
+
+repos:
+  meta-raspberrypi:
+    url: https://github.com/agherzan/meta-raspberrypi/
+    path: layers/meta-raspberrypi
+    branch: kirkstone
+
+  meta-rauc:
+    url: https://github.com/rauc/meta-rauc
+    path: layers/meta-rauc
+    refspec: kirkstone
+
+  meta-musicbox-bsp:
+    url: git@github.com:pcurt/meta-musicbox-bsp.git
+    path: layers/meta-musicbox-bsp
+    branch: main
+
+  meta-musicbox-distro:
+    url: git@github.com:pcurt/meta-musicbox-distro.git
+    path: layers/meta-musicbox-distro
+    branch: main
+
+local_conf_header:
+  debug-tweaks: |
+    EXTRA_IMAGE_FEATURES = "debug-tweaks"
