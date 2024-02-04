@@ -21,6 +21,11 @@ repos:
     path: layers/meta-rauc
     refspec: kirkstone
 
+  meta-rust:
+    url: https://github.com/meta-rust/meta-rust.git
+    path: layers/meta-rust
+    refspec: master
+
   meta-musicbox-bsp:
     url: git@github.com:pcurt/meta-musicbox-bsp.git
     path: layers/meta-musicbox-bsp
