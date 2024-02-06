@@ -4,3 +4,6 @@
 build/
 layers/
 yocto-cache/
+
+# Local env
+env.yml

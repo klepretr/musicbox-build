@@ -57,13 +57,24 @@ For more information: https://github.com/savoirfairelinux/cqfd
   $ git clone git@github.com:klepretr/musicbox-build.git
 ```
 
-### Build cqfd docker image ###
+## Build cqfd docker image ##
 
 This has to be done only once unless the Dockerfile is modified:
 
 ```bash
   $ cqfd init
 ```
+
+## Configure the build ##
+
+### Wifi setup ###
+Create a file called `env.yml` based on `env.yml.template`
+
+```bash
+  $ cp env.yml.template env.yml
+```
+
+In the file `env.yml` set the two variables `WIFI_SSID` and `WIFI_PASSWORD` with your own configuration.
 
 ## Build project ##
 
