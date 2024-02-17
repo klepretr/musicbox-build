@@ -28,12 +28,12 @@ repos:
     refspec: master
 
   meta-musicbox-bsp:
-    url: git@github.com:pcurt/meta-musicbox-bsp.git
+    url: git@github.com:klepretr/meta-musicbox-bsp.git
     path: layers/meta-musicbox-bsp
     branch: main
 
   meta-musicbox-distro:
-    url: git@github.com:pcurt/meta-musicbox-distro.git
+    url: git@github.com:klepretr/meta-musicbox-distro.git
     path: layers/meta-musicbox-distro
     branch: main
 
